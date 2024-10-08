@@ -1,0 +1,21 @@
+{
+  "name": "blogiverse",
+  "version": "1.0.0",
+  "description": "Developed \"Blogiverse\" a dynamic blog platform using Node.js, MongoDB, and EJS. Key features  include user, authentication, adding and deleting blog posts, and commenting functionality.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node server.js",
+    "server":"nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "ejs": "^3.1.10",
+    "express": "^4.21.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.7.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^3.1.7"
+  }
+}
