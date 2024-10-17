@@ -20,12 +20,9 @@ const app = express();
 const PORT = 8000;
 
 mongoose
-  .connect("mongodb://localhost:27017/blogiverse")
+  .connect("mongodb+srv://krunalvaishnav2004:bqrSZ5hFiKAlufPM@cluster0.xrx5c.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
   .then((e) => console.log("MongoDB Connected"));
 
-
-  //krunalvaishnav2004
-  //bqrSZ5hFiKAlufPM
 app.set("view engine", "ejs");
 app.set("views", path.resolve("./views"));
 
