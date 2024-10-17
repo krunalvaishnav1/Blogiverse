@@ -7,15 +7,29 @@
   <body>
     <%- include('./partials/nav') %>
 
-    <div class="container mt-3">
-      <div class="row row-cols-4">
+    <div class="container mt-5">
+      <h1 class="mb-4">Latest Blogs</h1>
+
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
         <% blogs.forEach(blog => { %>
         <div class="col">
-          <div class="card col" style="width: 18rem">
-            <img src="<%= blog.coverImageURL %>" class="card-img-top" />
+          <div class="card h-100 shadow-sm">
+            <img
+              src="<%= blog.coverImageURL %>"
+              class="card-img-top img-fluid"
+              alt="Blog cover image"
+              style="height: 200px; object-fit: cover"
+            />
             <div class="card-body">
-              <h5 class="card-title"><%= blog.title %></h5>
-              <a href="/blog/<%= blog._id %>" class="btn btn-primary">View</a>
+              <h5 class="card-title text-center"><%= blog.title %></h5>
+              <p class="card-text text-muted">
+                <%= blog.body.substring(0, 100) %>...
+              </p>
+              <div class="d-grid">
+                <a href="/blog/<%= blog._id %>" class="btn btn-primary"
+                  >Read More</a
+                >
+              </div>
             </div>
           </div>
         </div>

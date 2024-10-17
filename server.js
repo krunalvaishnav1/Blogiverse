@@ -23,6 +23,9 @@ mongoose
   .connect("mongodb://localhost:27017/blogiverse")
   .then((e) => console.log("MongoDB Connected"));
 
+
+  //krunalvaishnav2004
+  //bqrSZ5hFiKAlufPM
 app.set("view engine", "ejs");
 app.set("views", path.resolve("./views"));
 
